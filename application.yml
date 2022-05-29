@@ -1,1 +1,16 @@
 app.setting: 'ad'
+
+gb.api:
+  endpoint:
+    manufacturer-url: 'http://${gb.api.endpoint.base-uri}/api/v1/manufacturer'
+    category-url: 'http://${gb.api.endpoint.base-uri}/api/v1/category'
+    product-url: 'http://${gb.api.endpoint.base-uri}/api/v1/product'
+  connection:
+    period: 100
+    max-period: 10000 #Millis
+    max-attempts: 3
+    connect-timeout: 10000 #Millis
+    #    connect-timeout-unit:
+    read-timeout: 30000 #Millis
+    #    read-timeout-unit:
+    follow-redirects: true
